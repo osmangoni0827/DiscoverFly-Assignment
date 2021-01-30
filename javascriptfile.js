@@ -1,5 +1,5 @@
 
-// Bookingform Part
+            // Bookingform Part Ticket Count
 function CountDisplay(IncrementDecrement, TicketType) {
     const CountOutput = GetId(TicketType);
     let Output = parseInt(CountOutput.value);
@@ -16,8 +16,7 @@ function CountDisplay(IncrementDecrement, TicketType) {
         }
     }
 }
-// DisplayPrize
-
+            // DisplayPrize
 function DisplayPrizeCalculation() {
     const SubTotal = GetId('Subtotal')
     const VAT = GetId('Vat')
@@ -30,11 +29,10 @@ function DisplayPrizeCalculation() {
 }
 
 
-// Bookingdescription Part
+        // Bookingdescription Part
 const Bookingdescription = GetId('Bookingdescription');
 const Bookingform = GetId('Bookingform');
 const BokingButton = GetId('Booking');
-
 BokingButton.addEventListener('click', function () {
     Bookingform.style.display = 'none';
     Bookingdescription.style.display = 'block';
@@ -47,7 +45,7 @@ BokingButton.addEventListener('click', function () {
     DescriptionPropertys('Total', 'TotalCost');
 })
 
-// Bookingdescription All PropertysDisplay
+            // Bookingdescription All PropertysDisplay
 function DescriptionPropertys(InputId, OutputId) {
     if (InputId == 'Total') {
         let DesplayId = GetId(OutputId);
@@ -60,7 +58,7 @@ function DescriptionPropertys(InputId, OutputId) {
     }
 }
 
-// GetAllId
+            // GetAllId
 function GetId(id) {
     return document.getElementById(id);
 }
